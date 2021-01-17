@@ -3,10 +3,11 @@ network.py
 ~~~~~~~~~~
 
 A module to implement the stochastic gradient descent learning
-algorithm for a feedforward neural network.  Gradients are calculated
-using backpropagation.  Note that I have focused on making the code
-simple, easily readable, and easily modifiable.  It is not optimized,
-and omits many desirable features.
+algorithm for a feedforward neural network. Gradients are calculated
+using backpropagation. Quadratic Cost function is used. Note that
+I have focused on making the code simple, easily readable,
+and easily modifiable. It is not optimized, and omits many desirable
+features.
 """
 
 #### Libraries
@@ -15,6 +16,7 @@ import random
 
 # Third-party libraries
 import numpy as np
+
 import helpers.mnist_loader as mnist_loader
 
 class Network(object):
